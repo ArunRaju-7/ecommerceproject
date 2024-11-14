@@ -1,11 +1,8 @@
-from functools import partial
-
-from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import  Products, Categories
-from .serializers import ProductsSerializer, CategoriesSerializer
+from .serializers import ProductsSerializer
 
 
 @api_view(['POST'])
